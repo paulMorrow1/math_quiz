@@ -1,0 +1,36 @@
+.accordion-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.question-container {
+  padding: 0px 5px;
+  display: flex;
+  background: #eaeaea;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  transition: transform ease-in-out 500ms;
+}
+
+.icon.open {
+  transform: rotate(90deg);
+}
+
+.answer-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  padding: 0px 5px;
+  transition: grid-template-rows ease-in-out 500ms;
+  overflow: hidden;
+}
+.answer-container > div {
+  overflow: hidden;
+}
+
+.answer-container.open {
+  grid-template-rows: 1fr;
+}
